@@ -12,7 +12,7 @@ console.log(concatena("ciao", "amici")); */
 /* ESERCIZIO 2 (for)
   Scrivi una funzione che torni un array di 10 elementi; ognuno di essi deve essere un valore random compreso tra 0 e 100 (incluso).
 */
-function GetTenNum() {
+/* function GetTenNum() {
   const arr = [];
   for (let i = 0; i < 10; i++) {
     arr[i] = Math.round(Math.random() * 100) + 1;
@@ -20,22 +20,22 @@ function GetTenNum() {
   return arr;
 }
 const dieci = GetTenNum();
-console.log(dieci);
+console.log(dieci); */
 
 /* ESERCIZIO 3 (filter)
   Scrivi una funzione per ricavare solamente i valori PARI da un array composto da soli valori numerici
 */
-function pari(array) {
+/* function pari(array) {
   const arrpar = array.filter((value) => value % 2 == 0);
   console.log(arrpar);
 }
 
-pari(dieci);
+pari(dieci); */
 
 /* ESERCIZIO 4 (forEach)
   Scrivi una funzione per sommare i numeri contenuti in un array
 */
-
+/* 
 function somma(array) {
   let sum = 0;
   array.forEach((num) => {
@@ -44,7 +44,7 @@ function somma(array) {
   console.log(sum);
 }
 
-somma(dieci);
+somma(dieci); */
 
 /* ESERCIZIO 5 (reduce)
   Scrivi una funzione per sommare i numeri contenuti in un array
@@ -56,23 +56,23 @@ console.log(sum); */
   Scrivi una funzione che, dato un array di soli numeri e un numero n come parametri, ritorni un secondo array con tutti i valori del precedente incrementati di n
 */
 
-function sumN(array, n) {
+/* function sumN(array, n) {
   let arr_inc = array.map((num) => num + n);
 
   return arr_inc;
 }
 
-console.log(sumN(dieci, 3));
+console.log(sumN(dieci, 3)); */
 
 /* ESERCIZIO 7 (map)
   Scrivi una funzione che, dato un array di stringhe, ritorni un nuovo array contenente le lunghezze delle rispettive stringhe dell'array di partenza
   es.: ["EPICODE", "is", "great"] => [7, 2, 5]
 */
-function GetNumLeng(array) {
+/* function GetNumLeng(array) {
   const conta_arr = array.map((str) => str.length);
   return conta_arr;
 }
-console.log(GetNumLeng(["ciao"]));
+console.log(GetNumLeng(["ciao"])); */
 
 /* ESERCIZIO 8 (forEach o for)
   Scrivi una funzione per creare un array contenente tutti i valori DISPARI da 1 a 99.
@@ -228,7 +228,17 @@ console.log(film_millenio); */
 /* ESERCIZIO 14 (find)
   Scrivi una funzione per ottenere dall'array fornito uno specifico film (la funzione riceve un imdbID come parametro).
 */
+/* function findfilm(id) {
+  return movies.find((imb) => imb.imdbID == id);
+}
+console.log(findfilm("tt4154796")); */
 
 /* ESERCIZIO 15 (findIndex)
   Scrivi una funzione per ottenere dall'array fornito l'indice del primo film uscito nell'anno fornito come parametro.
 */
+
+/* function getIndex(n) {
+  return movies.findIndex((anno) => anno.Year == n);
+}
+
+console.log(getIndex("2002")); */
